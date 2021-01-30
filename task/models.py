@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinLengthValidator
 # Create your models here.
 class BaseModel(models.Model):
+#changing tha model file usisng git
     is_active = models.CharField(max_length=50 , default='active')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
